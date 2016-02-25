@@ -43,3 +43,7 @@ b2.pipe(process.stdout)
 logs.forEach(function(log) {
   log.info('the world is on time')
 })
+
+var b3 = bistre({})
+b3.pipe(process.stdout)
+b3.end("2\n")
